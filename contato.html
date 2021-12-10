@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <title>LGTBQIA+ no esporte</title>
+  <link rel="stylesheet" href="css/reset.css" />
+ <link rel="stylesheet" href="css/LGBTQIA.css" />
+ <link rel="stylesheet" href="css/contato.css"/>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+
+ <script src="js/contato.js"></script>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="box">
+            <a href="https://www.ifms.edu.br/" target="_blank"><img src="imagem/logo_ufms_fundo_preto__1_-removebg-preview.png" class="ifms"></a>
+        </div>
+
+        <div class="titulo_nav">
+            
+            <nav class="menu">
+                <ul class="ul_lista">
+                    <li class="item_menu"><a class="link_menu" href="sobre.html">Sobre</a></li>
+                    <li class="item_menu"><a class="link_menu" href="LGBTQIA.html">LGBTQIA+ no Esporte</a></li>
+                    <li class="item_menu"><a class="link_menu" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="formContato" action="arquivo.js" class="formulario" method="post" onsubmit="return validarCampos()">
+            <div class="div-mensagem"><span id="msgErro"></span></div>
+            <label>Nome e Sobrenome</label>
+            <input class="input-padrao" type="text" id="nomesobrenome" required />
+
+            <label>Email</label>
+            <input class="input-padrao" type="text" id="email" required placeholder="seuemail@dominio.com" />
+
+            <label>Mensagem</label>
+            <textarea class="input-padrao" cols="70" rows="10 " id="mensagem"></textarea>
+
+
+            <input type="submit" value="Enviar" class="enviar" >
+
+
+        </form>
+
+    </main>
+
+    <footer class="rodape">
+        &copy; Leonardo Rosa, Gabriela Ribeiro - 2021
+    </footer>
+
+</body>
+
+</html>
